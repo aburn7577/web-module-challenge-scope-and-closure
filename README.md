@@ -42,8 +42,11 @@ Find the file `index.js` and complete the tasks.
 
 Edit the `ReadMe` file with your answers.
 
-1. In your own words, define closure (1-2 sentences).
-2. Study the following code, then answer the questions below.
+1.In your own words, define closure (1-2 sentences).
+ 
+  * Closure is a function having private variables that can't be accessed or changed outside of that particular function.
+
+2.Study the following code, then answer the questions below.
 
 ```js
 function personalDice(name){
@@ -64,8 +67,16 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+  
+  * Closure is used where function is inside of personalDice. We can tell because personalDice returns another function.
+
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+  
+  * "Dan rolled a" is always the same and the number that is rolled is always changing.
+
 c. What is the lexical scope of `newRoll`? 
+  
+  * function is the lexical scope.
 
 
 ### Task 3 - Stretch Goals
