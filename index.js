@@ -29,10 +29,19 @@ console.log(processFirstItem(['foo','bar'],function(str){return str+str}));
   
   1. What is the difference between counter1 and counter2?
   
+  counter1 has the variable inside the function which can only be used in that function.
+  counter2 has a globle variable which canbe used in any function and changed by other functions.
+
   2. Which of the two uses a closure? How can you tell?
+
+  counter1 uses closure because counter function can access the variable of counterMaker function.
   
   3. In what scenario would the counter1 code be preferable? In what scenario would 
      counter2 be better?  
+  
+  counter1 would be preferable when a code needs privacy or the variable to not be adjusted by another function.
+  counter2 would be better when you need to have a global variable for multiple things.
+
 */
 
 // counter1 code
