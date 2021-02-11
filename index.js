@@ -75,7 +75,6 @@ function inning(){
     return Math.floor(Math.random() * 3)
 }
 console.log(inning())
-console.log(inning())
 
 /* ⚾️⚾️⚾️ Task 3: finalScore() ⚾️⚾️⚾️
 Use the finalScore function below to do the following:
@@ -91,9 +90,20 @@ Use the finalScore function below to do the following:
 }
 */ 
 
-function finalScore(/*code Here*/){
-  /*Code Here*/
-}
+function finalScore(callback, number){
+  let score = {
+    "Home": 0,
+    "Away": 0
+  }
+  for (let i = 0; i <= number; ++i){
+    score.Home = callback() + number;
+    score.Away = callback() + number;
+    }
+  return score;
+  }
+  
+
+console.log(finalScore(inning, 9))
 
 /* ⚾️⚾️⚾️ Task 4: getInningScore() ⚾️⚾️⚾️
 Use the getInningScore() function below to do the following:
